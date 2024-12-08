@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Avancée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <div id="historique">
+            <h3>📜 Historique :</h3>
+            <ul id="historique-list"></ul>
+        </div>
+    <div id="dv1">
+       
+
+        <input type="text" id="dv2" disabled />
+        
+        
+        
+        
+        <div id="calc">
+            <button class="btn" onclick="calculer('(')">(</button>
+            <button class="btn" onclick="calculer(')')">)</button>
+            <button class="btn" onclick="calculer('**')">xⁿ</button>
+            <button class="btn" onclick="effacerTout()">AC</button>
+            
+            <button class="btn" onclick="calculer('1')">1</button>
+            <button class="btn" onclick="calculer('2')">2</button>
+            <button class="btn" onclick="calculer('3')">3</button>
+            <button class="opr" onclick="calculer('+')">+</button>
+            
+            <button class="btn" onclick="calculer('4')">4</button>
+            <button class="btn" onclick="calculer('5')">5</button>
+            <button class="btn" onclick="calculer('6')">6</button>
+            <button class="opr" onclick="calculer('-')">-</button>
+            
+            <button class="btn" onclick="calculer('7')">7</button>
+            <button class="btn" onclick="calculer('8')">8</button>
+            <button class="btn" onclick="calculer('9')">9</button>
+            <button class="opr" onclick="calculer('*')">*</button>
+            
+            <button class="btn" onclick="calculer('0')">0</button>
+            <button class="btn" onclick="calculer('.')">.</button>
+            <button class="btn" onclick="supprimerDernier()">DEL</button>
+            <button class="opr" onclick="calculer('/')">/</button>
+            
+            <button class="btn" onclick="calculer('Math.sin(')">sin</button>
+            <button class="btn" onclick="calculer('Math.cos(')">cos</button>
+            <button class="btn" onclick="calculer('Math.tan(')">tan</button>
+            <button class="btn" onclick="calculer('1/')">1/x</button>
+            
+            <button id="egl" onclick="calcule()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
